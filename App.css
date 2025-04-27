@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+.app-root {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f6fa;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.app-body {
+  display: flex;
+  min-height: 90vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #fff;
+  border-right: 1px solid #eee;
+  padding: 2rem 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+.open-third-pane-btn {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.third-pane {
+  width: 300px;
+  background: #fff;
+  border-left: 1px solid #eee;
+  padding: 2rem 1rem;
+  position: relative;
+  animation: slideIn 0.3s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+}
+
+.google-mock {
+  margin-top: 2rem;
+}
+
+.add-trip-btn {
+  background: #007aff;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.itinerary-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.itinerary-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 1.5rem;
+  min-width: 300px;
+  max-width: 350px;
+}
+
+.itinerary-day {
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .app-root {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+  .third-pane {
+    border-left: none;
+    border-top: 1px solid #eee;
+  }
+}
