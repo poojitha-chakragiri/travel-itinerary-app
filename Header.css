@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.add-trip-btn {
+  background: #007aff;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,43 @@
+.itinerary-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  margin-bottom: 28px;
+  transition: box-shadow 0.2s, transform 0.15s;
+  font-family: "Inter", sans-serif;
+}
+.itinerary-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.16);
+  transform: translateY(-2px) scale(1.01);
+}
+.itinerary-card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+}
+.itinerary-card p {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+.itinerary-day {
+  margin-bottom: 14px;
+}
+.itinerary-day h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+.itinerary-day ul {
+  padding-left: 20px;
+  margin: 0;
+}
+.itinerary-day li {
+  font-size: 13.5px;
+  color: #444;
+  margin-bottom: 2px;
+}
